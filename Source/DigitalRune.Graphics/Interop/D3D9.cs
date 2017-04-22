@@ -238,7 +238,7 @@ namespace DigitalRune.Graphics.Interop
 
       int width = Math.Min(source.Description.Width, target.Description.Width);
       int height = Math.Min(source.Description.Height, target.Description.Height);
-      var rectangle = new Rectangle(0, 0, width, height);
+      var rectangle = new SharpDX.Mathematics.Interop.RawRectangle(0, 0, width, height);
       _device.StretchRectangle(source, rectangle, target, rectangle, TextureFilter.None);
     }
 

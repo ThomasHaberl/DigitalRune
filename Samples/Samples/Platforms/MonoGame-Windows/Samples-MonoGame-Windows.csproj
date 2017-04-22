@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{F2968098-672C-46C5-A10D-A2EBEEB6AA52}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <RootNamespace>Samples</RootNamespace>
     <AssemblyName>Samples</AssemblyName>
     <ApplicationIcon>Game.ico</ApplicationIcon>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -47,6 +47,10 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\DigitalRune.Animation\DigitalRune.Animation%28PCL%29.csproj">
       <Project>{fca3d67b-a19a-4398-a126-171e5e1217f1}</Project>
       <Name>DigitalRune.Animation%28PCL%29</Name>
@@ -94,10 +98,6 @@
     <ProjectReference Include="..\..\..\..\Source\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>
       <Name>DigitalRune</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Source\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
-      <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
-      <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

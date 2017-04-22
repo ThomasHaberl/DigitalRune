@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -11,7 +11,7 @@
     <RootNamespace>InteropSample</RootNamespace>
     <AssemblyName>InteropSample</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -54,6 +54,10 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune.Graphics\DigitalRune.Graphics%28MG,Win%29.csproj">
       <Project>{5926e2b5-50ad-433d-91f5-dd947f26d8fd}</Project>
       <Name>DigitalRune.Graphics%28MG,Win%29</Name>
@@ -61,10 +65,6 @@
     <ProjectReference Include="..\..\Source\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>
       <Name>DigitalRune</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Source\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
-      <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
-      <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
