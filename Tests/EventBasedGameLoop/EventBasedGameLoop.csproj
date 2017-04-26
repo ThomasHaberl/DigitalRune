@@ -74,9 +74,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Source\DigitalRune.Game\DigitalRune.Game%28PCL%29.csproj">
-      <Project>{8d76487a-0b6f-4517-85b0-2762ae1b4e1a}</Project>
-      <Name>DigitalRune.Game%28PCL%29</Name>
+    <ProjectReference Include="..\..\Source\DigitalRune.Game\DigitalRune.Game.csproj">
+      <Project>{dd185959-5270-45f3-9a99-f444483a0fa9}</Project>
+      <Name>DigitalRune.Game</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune\DigitalRune.csproj">
       <Project>{5A0E3C60-1CA9-49D5-84CA-308CB8E3A3B4}</Project>

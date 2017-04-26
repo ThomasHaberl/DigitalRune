@@ -48,7 +48,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="3ebc3967-7562-463e-a636-78c5edb94c06" />
+      <UserProperties ProjectLinkReference="3ebc3967-7562-463e-a636-78c5edb94c06" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
@@ -65,17 +65,17 @@
       <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
       <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
-      <Project>{8a8fe6d4-0906-4fc3-847c-31387dfdcb2c}</Project>
-      <Name>DigitalRune.Geometry%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry.csproj">
+      <Project>{0aa81a4e-12f0-492a-8927-f5013c4c7657}</Project>
+      <Name>DigitalRune.Geometry</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Mathematics.Content.Pipeline\DigitalRune.Mathematics.Content.Pipeline%28MG,Win%29.csproj">
       <Project>{3ae1d04a-662d-4411-bb81-95c8655ac05e}</Project>
       <Name>DigitalRune.Mathematics.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
-      <Project>{a5833de3-70a9-4258-966f-77456d6c7900}</Project>
-      <Name>DigitalRune.Mathematics%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>

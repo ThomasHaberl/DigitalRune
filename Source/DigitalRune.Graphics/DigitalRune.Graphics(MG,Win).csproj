@@ -42,7 +42,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="9508e261-5ac5-4eb7-97f9-bc4ff6717708" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="9508e261-5ac5-4eb7-97f9-bc4ff6717708" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -81,21 +81,21 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation%28PCL%29.csproj">
-      <Project>{fca3d67b-a19a-4398-a126-171e5e1217f1}</Project>
-      <Name>DigitalRune.Animation%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation.csproj">
+      <Project>{adf2832e-b447-4701-8ccc-22eccdafee67}</Project>
+      <Name>DigitalRune.Animation</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
-      <Project>{8a8fe6d4-0906-4fc3-847c-31387dfdcb2c}</Project>
-      <Name>DigitalRune.Geometry%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry.csproj">
+      <Project>{0aa81a4e-12f0-492a-8927-f5013c4c7657}</Project>
+      <Name>DigitalRune.Geometry</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
-      <Project>{a5833de3-70a9-4258-966f-77456d6c7900}</Project>
-      <Name>DigitalRune.Mathematics%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Particles\DigitalRune.Particles%28PCL%29.csproj">
-      <Project>{156169b7-af63-478c-90cb-f6652b867e4f}</Project>
-      <Name>DigitalRune.Particles%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Particles\DigitalRune.Particles.csproj">
+      <Project>{e3aca053-3f3e-485f-b6a3-bf13e5af76d4}</Project>
+      <Name>DigitalRune.Particles</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
       <Project>{5A0E3C60-1CA9-49D5-84CA-308CB8E3A3B4}</Project>

@@ -96,9 +96,9 @@
       <Project>{461af538-60c1-4bdc-a1b8-60c2750e5bc3}</Project>
       <Name>DigitalRune.Animation.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation%28PCL%29.csproj">
-      <Project>{fca3d67b-a19a-4398-a126-171e5e1217f1}</Project>
-      <Name>DigitalRune.Animation%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation.csproj">
+      <Project>{adf2832e-b447-4701-8ccc-22eccdafee67}</Project>
+      <Name>DigitalRune.Animation</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Editor\DigitalRune.Editor.csproj">
       <Project>{ED3E54ED-9F94-4777-B09B-2866FAE5B881}</Project>
@@ -108,17 +108,17 @@
       <Project>{9ab1d52a-7ff5-407b-9920-65dabac6c573}</Project>
       <Name>DigitalRune.Game.UI.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Game\DigitalRune.Game%28PCL%29.csproj">
-      <Project>{8D76487A-0B6F-4517-85B0-2762AE1B4E1A}</Project>
-      <Name>DigitalRune.Game%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Game\DigitalRune.Game.csproj">
+      <Project>{dd185959-5270-45f3-9a99-f444483a0fa9}</Project>
+      <Name>DigitalRune.Game</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Geometry.Content.Pipeline\DigitalRune.Geometry.Content.Pipeline%28MG,Win%29.csproj">
       <Project>{b7ad9a5b-2dd8-48fe-8e00-65430309d170}</Project>
       <Name>DigitalRune.Geometry.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
-      <Project>{8a8fe6d4-0906-4fc3-847c-31387dfdcb2c}</Project>
-      <Name>DigitalRune.Geometry%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry.csproj">
+      <Project>{0aa81a4e-12f0-492a-8927-f5013c4c7657}</Project>
+      <Name>DigitalRune.Geometry</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Graphics.Content.Pipeline\DigitalRune.Graphics.Content.Pipeline%28MG,Win%29.csproj">
       <Project>{686e45de-6daf-4bf0-affc-7a51bf7d98ca}</Project>
@@ -132,13 +132,9 @@
       <Project>{3ae1d04a-662d-4411-bb81-95c8655ac05e}</Project>
       <Name>DigitalRune.Mathematics.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
-      <Project>{a5833de3-70a9-4258-966f-77456d6c7900}</Project>
-      <Name>DigitalRune.Mathematics%28PCL%29</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Particles\DigitalRune.Particles%28PCL%29.csproj">
-      <Project>{156169b7-af63-478c-90cb-f6652b867e4f}</Project>
-      <Name>DigitalRune.Particles%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj">
       <Project>{0f5efc04-c685-420e-a92e-741ac517db00}</Project>

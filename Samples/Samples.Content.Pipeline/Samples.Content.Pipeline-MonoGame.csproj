@@ -59,10 +59,6 @@
       <Project>{461af538-60c1-4bdc-a1b8-60c2750e5bc3}</Project>
       <Name>DigitalRune.Animation.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Animation\DigitalRune.Animation%28PCL%29.csproj">
-      <Project>{fca3d67b-a19a-4398-a126-171e5e1217f1}</Project>
-      <Name>DigitalRune.Animation%28PCL%29</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune.Game.UI.Content.Pipeline\DigitalRune.Game.UI.Content.Pipeline%28MG,Win%29.csproj">
       <Project>{9ab1d52a-7ff5-407b-9920-65dabac6c573}</Project>
       <Name>DigitalRune.Game.UI.Content.Pipeline%28MG,Win%29</Name>
@@ -71,9 +67,9 @@
       <Project>{b7ad9a5b-2dd8-48fe-8e00-65430309d170}</Project>
       <Name>DigitalRune.Geometry.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
-      <Project>{8a8fe6d4-0906-4fc3-847c-31387dfdcb2c}</Project>
-      <Name>DigitalRune.Geometry%28PCL%29</Name>
+    <ProjectReference Include="..\..\Source\DigitalRune.Geometry\DigitalRune.Geometry.csproj">
+      <Project>{0aa81a4e-12f0-492a-8927-f5013c4c7657}</Project>
+      <Name>DigitalRune.Geometry</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune.Graphics.Content.Pipeline\DigitalRune.Graphics.Content.Pipeline%28MG,Win%29.csproj">
       <Project>{686e45de-6daf-4bf0-affc-7a51bf7d98ca}</Project>
@@ -83,9 +79,9 @@
       <Project>{3ae1d04a-662d-4411-bb81-95c8655ac05e}</Project>
       <Name>DigitalRune.Mathematics.Content.Pipeline%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
-      <Project>{a5833de3-70a9-4258-966f-77456d6c7900}</Project>
-      <Name>DigitalRune.Mathematics%28PCL%29</Name>
+    <ProjectReference Include="..\..\Source\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>

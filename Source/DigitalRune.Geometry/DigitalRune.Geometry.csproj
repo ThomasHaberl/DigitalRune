@@ -1,72 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
-    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8A8FE6D4-0906-4FC3-847C-31387DFDCB2C}</ProjectGuid>
+    <ProjectGuid>{0AA81A4E-12F0-492A-8927-F5013C4C7657}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DigitalRune.Geometry</RootNamespace>
     <AssemblyName>DigitalRune.Geometry</AssemblyName>
-    <TargetFrameworkVersion Condition=" '$(OS)' == 'Windows_NT' ">v4.0</TargetFrameworkVersion>
-    <TargetFrameworkVersion Condition=" '$(OS)' == 'Unix' ">v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile Condition=" '$(OS)' == 'Windows_NT' ">Profile344</TargetFrameworkProfile>
-    <TargetFrameworkProfile Condition=" '$(OS)' == 'Unix' ">Profile78</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <BaseIntermediateOutputPath>obj\.NETPortable\Debug\</BaseIntermediateOutputPath>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)\</IntermediateOutputPath>
-    <OutputPath Condition=" '$(OS)' == 'Windows_NT' ">bin\.NETPortable\Debug\</OutputPath>
-    <OutputPath Condition=" '$(OS)' == 'Unix' ">bin\.NETPortable_iOS\Debug\</OutputPath>
-    <DefineConstants Condition=" '$(OS)' == 'Windows_NT' ">TRACE;DEBUG;PORTABLE;MONOGAME;POOL_ENUMERABLES</DefineConstants>
-    <DefineConstants Condition=" '$(OS)' == 'Unix' ">TRACE;DEBUG;PORTABLE;MONOGAME;POOL_ENUMERABLES;NET45</DefineConstants>
+    <OutputPath>bin\.NETFramework\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MONOGAME;POOL_ENUMERABLES;WINDOWS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\.NETPortable\Debug\DigitalRune.Geometry.xml</DocumentationFile>
-    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <DocumentationFile>bin\.NETFramework\Debug\DigitalRune.Geometry.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <BaseIntermediateOutputPath>obj\.NETPortable\Release\</BaseIntermediateOutputPath>
-    <IntermediateOutputPath>$(BaseIntermediateOutputPath)\</IntermediateOutputPath>
-    <OutputPath Condition=" '$(OS)' == 'Windows_NT' ">bin\.NETPortable\Release\</OutputPath>
-    <OutputPath Condition=" '$(OS)' == 'Unix' ">bin\.NETPortable_iOS\Release\</OutputPath>
-    <DefineConstants Condition=" '$(OS)' == 'Windows_NT' ">TRACE;PORTABLE;MONOGAME;POOL_ENUMERABLES</DefineConstants>
-    <DefineConstants Condition=" '$(OS)' == 'Unix' ">TRACE;PORTABLE;MONOGAME;POOL_ENUMERABLES;NET45</DefineConstants>
+    <OutputPath>bin\.NETFramework\Release\</OutputPath>
+    <DefineConstants>TRACE;MONOGAME;POOL_ENUMERABLES;WINDOWS</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\.NETPortable\Release\DigitalRune.Geometry.xml</DocumentationFile>
+    <DocumentationFile>bin\.NETFramework\Release\DigitalRune.Geometry.xml</DocumentationFile>
   </PropertyGroup>
-  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
-  <ProjectExtensions>
-    <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="630154b1-627e-4890-94d7-6c7c6c0f9420" />
-    </VisualStudio>
-  </ProjectExtensions>
   <ItemGroup>
-    <ProjectReference Include="..\DigitalRune\DigitalRune%28PCL%29.csproj">
-      <Project>{05D82E85-901A-42CE-8D0A-DAF8B7F0168B}</Project>
-      <Name>DigitalRune(PCL)</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.PCL.csproj">
-      <Project>{FFCCDE91-500E-47EF-8342-5CA5C85A67FE}</Project>
-      <Name>MonoGame.Framework.PCL</Name>
-    </ProjectReference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collisions\Algorithms\BoxBoxAlgorithm.cs" />
@@ -178,8 +146,8 @@
     <Compile Include="GeometryHelper_Planes.cs" />
     <Compile Include="GeometryHelper_Spheres.cs" />
     <Compile Include="GeometryHelper_SupportMapping.cs" />
-    <Compile Include="GeometryHelper_TriangleTriangle.cs" />
     <Compile Include="GeometryHelper_Triangles.cs" />
+    <Compile Include="GeometryHelper_TriangleTriangle.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="IGeometricObject.cs" />
     <Compile Include="Meshes\Convex Decomposition\CDIsland.cs" />
@@ -203,6 +171,9 @@
     <Compile Include="Meshes\Triangulator.cs" />
     <Compile Include="Meshes\VertexAdjacency.cs" />
     <Compile Include="NamespaceDoc.cs" />
+    <Compile Include="Partitioning\BasePartition.cs" />
+    <Compile Include="Partitioning\BasePartition_Queries.cs" />
+    <Compile Include="Partitioning\BasePartition_Queries_Pooled.cs" />
     <Compile Include="Partitioning\BVH\AabbTreeBuilder.cs" />
     <Compile Include="Partitioning\BVH\AabbTreeHelper.cs" />
     <Compile Include="Partitioning\BVH\Adaptive BVH\AdaptiveAabbTree.cs" />
@@ -234,9 +205,6 @@
     <Compile Include="Partitioning\BVH\Static BVH\AabbTree_Queries_Pooled.cs" />
     <Compile Include="Partitioning\BVH\Static BVH\AabbTree_TreeVsTree.cs" />
     <Compile Include="Partitioning\BVH\Static BVH\AabbTree_TreeVsTree_Pooled.cs" />
-    <Compile Include="Partitioning\BasePartition.cs" />
-    <Compile Include="Partitioning\BasePartition_Queries.cs" />
-    <Compile Include="Partitioning\BasePartition_Queries_Pooled.cs" />
     <Compile Include="Partitioning\ClosestPointCallbackWrapper.cs" />
     <Compile Include="Partitioning\DebugSpatialPartition.cs" />
     <Compile Include="Partitioning\DelegatePairFilter.cs" />
@@ -256,7 +224,6 @@
     <Compile Include="Pose.cs" />
     <Compile Include="PoseD.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="Properties\AssemblyInfo.template" />
     <Compile Include="ResourcePools.cs" />
     <Compile Include="ResourcePools{T}.cs" />
     <Compile Include="Shapes\Aabb.cs" />
@@ -300,4 +267,37 @@
     <Compile Include="Shapes\ViewVolume.cs" />
     <Compile Include="TestGeometricObject.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagrams\Geometry.cd" />
+    <None Include="ClassDiagrams\Geometry.Collisions.Algorithms.cd" />
+    <None Include="ClassDiagrams\Geometry.Collisions.cd" />
+    <None Include="ClassDiagrams\Geometry.Meshes.cd" />
+    <None Include="ClassDiagrams\Geometry.Partitioning.cd" />
+    <None Include="ClassDiagrams\Geometry.Shapes_Convex.cd" />
+    <None Include="ClassDiagrams\Geometry.Shapes_Shapes.cd" />
+    <None Include="ClassDiagrams\Geometry.Shapes_Structures.cd" />
+    <None Include="Properties\AssemblyInfo.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
+      <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>
+      <Name>DigitalRune</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
 </Project>

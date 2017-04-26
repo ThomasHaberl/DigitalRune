@@ -10,9 +10,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DigitalRune.Particles.Tests</RootNamespace>
     <AssemblyName>DigitalRune.Particles.Tests</AssemblyName>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -29,7 +31,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -75,17 +78,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
-      <Project>{8A8FE6D4-0906-4FC3-847C-31387DFDCB2C}</Project>
-      <Name>DigitalRune.Geometry%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry.csproj">
+      <Project>{0aa81a4e-12f0-492a-8927-f5013c4c7657}</Project>
+      <Name>DigitalRune.Geometry</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
-      <Project>{A5833DE3-70A9-4258-966F-77456D6C7900}</Project>
-      <Name>DigitalRune.Mathematics%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.Particles\DigitalRune.Particles%28PCL%29.csproj">
-      <Project>{156169B7-AF63-478C-90CB-F6652B867E4F}</Project>
-      <Name>DigitalRune.Particles%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.Particles\DigitalRune.Particles.csproj">
+      <Project>{e3aca053-3f3e-485f-b6a3-bf13e5af76d4}</Project>
+      <Name>DigitalRune.Particles</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
       <Project>{5A0E3C60-1CA9-49D5-84CA-308CB8E3A3B4}</Project>

@@ -123,25 +123,21 @@
       <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
       <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Animation\DigitalRune.Animation%28PCL%29.csproj">
-      <Project>{fca3d67b-a19a-4398-a126-171e5e1217f1}</Project>
-      <Name>DigitalRune.Animation%28PCL%29</Name>
+    <ProjectReference Include="..\..\Source\DigitalRune.Game\DigitalRune.Game.csproj">
+      <Project>{dd185959-5270-45f3-9a99-f444483a0fa9}</Project>
+      <Name>DigitalRune.Game</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Game\DigitalRune.Game%28PCL%29.csproj">
-      <Project>{8d76487a-0b6f-4517-85b0-2762ae1b4e1a}</Project>
-      <Name>DigitalRune.Game%28PCL%29</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
-      <Project>{8a8fe6d4-0906-4fc3-847c-31387dfdcb2c}</Project>
-      <Name>DigitalRune.Geometry%28PCL%29</Name>
+    <ProjectReference Include="..\..\Source\DigitalRune.Geometry\DigitalRune.Geometry.csproj">
+      <Project>{0aa81a4e-12f0-492a-8927-f5013c4c7657}</Project>
+      <Name>DigitalRune.Geometry</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune.Graphics\DigitalRune.Graphics%28MG,Win%29.csproj">
       <Project>{5926e2b5-50ad-433d-91f5-dd947f26d8fd}</Project>
       <Name>DigitalRune.Graphics%28MG,Win%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Source\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
-      <Project>{a5833de3-70a9-4258-966f-77456d6c7900}</Project>
-      <Name>DigitalRune.Mathematics%28PCL%29</Name>
+    <ProjectReference Include="..\..\Source\DigitalRune.Mathematics\DigitalRune.Mathematics.csproj">
+      <Project>{cb13da70-595a-4c44-a523-5525d1ada086}</Project>
+      <Name>DigitalRune.Mathematics</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\Source\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj">
       <Project>{0f5efc04-c685-420e-a92e-741ac517db00}</Project>
