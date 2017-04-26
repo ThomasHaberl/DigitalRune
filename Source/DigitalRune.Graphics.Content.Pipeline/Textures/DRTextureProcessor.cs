@@ -586,7 +586,7 @@ namespace DigitalRune.Graphics.Content.Pipeline
           break;
 
         default:
-          throw new NotImplementedException(string.Format("Texture compression it not implemented for {0}", context.TargetPlatform));
+          throw new NotImplementedException(string.Format("Texture compression is not implemented for {0} {1}", context.TargetPlatform, (int)context.TargetPlatform));
       }
 
       return textureContent;
