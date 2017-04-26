@@ -83,9 +83,9 @@
       <Project>{156169b7-af63-478c-90cb-f6652b867e4f}</Project>
       <Name>DigitalRune.Particles%28PCL%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Source\DigitalRune.Physics.Specialized\DigitalRune.Physics.Specialized%28PCL%29.csproj">
-      <Project>{810c19ed-db79-4cf7-8710-21b4e4e31ff5}</Project>
-      <Name>DigitalRune.Physics.Specialized%28PCL%29</Name>
+    <ProjectReference Include="..\..\..\..\Source\DigitalRune.Physics.Specialized\DigitalRune.Physics.Specialized.csproj">
+      <Project>{410e1b18-034e-47cf-aa09-5116aa704e31}</Project>
+      <Name>DigitalRune.Physics.Specialized</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\DigitalRune.Physics\DigitalRune.Physics%28PCL%29.csproj">
       <Project>{82af32ed-e99e-4c61-902f-9e2d42eae0f3}</Project>
