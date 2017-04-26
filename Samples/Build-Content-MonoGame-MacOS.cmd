@@ -5,7 +5,7 @@ SETLOCAL
 cd Content
 
 :: Build content with MonoGame Content Builder tool.
-..\..\Source\MonoGame\Tools\MGCB\bin\Windows\AnyCPU\Release\MGCB.exe /@:Content-MonoGame-MacOS.mgcb || GOTO error
+..\..\..\MonoGame\Tools\MGCB\bin\Windows\AnyCPU\Release\MGCB.exe /@:Content-MonoGame-MacOS.mgcb || GOTO error
 
 :: ZIP content.
 ..\..\Tools\Pack\bin\x64\Release\Pack.exe --output bin\MonoGame\MacOS\Content.zip --recursive --directory bin\MonoGame\MacOS\Content *.* || GOTO error
