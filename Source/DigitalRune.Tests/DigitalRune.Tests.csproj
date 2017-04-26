@@ -12,7 +12,8 @@
     <AssemblyName>DigitalRune.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
     <PublishUrl>publish\</PublishUrl>
@@ -30,7 +31,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -97,9 +99,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation%28PCL%29.csproj">
-      <Project>{4a84fcaf-bdd3-403e-a409-346d8b36564b}</Project>
-      <Name>DigitalRune.ServiceLocation%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj">
+      <Project>{0f5efc04-c685-420e-a92e-741ac517db00}</Project>
+      <Name>DigitalRune.ServiceLocation</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
       <Project>{5A0E3C60-1CA9-49D5-84CA-308CB8E3A3B4}</Project>

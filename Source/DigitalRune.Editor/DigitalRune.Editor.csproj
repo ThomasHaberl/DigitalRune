@@ -14,9 +14,11 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
-    <StartupObject></StartupObject>
+    <StartupObject>
+    </StartupObject>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <FileUpgradeFlags></FileUpgradeFlags>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
     <OldToolsVersion>3.5</OldToolsVersion>
     <UpgradeBackupLocation />
     <PublishUrl>publish\</PublishUrl>
@@ -33,7 +35,8 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <Utf8Output>true</Utf8Output>
     <ExpressionBlendVersion>4.0.20901.0</ExpressionBlendVersion>
   </PropertyGroup>
@@ -123,9 +126,9 @@
       <Project>{f53cce9a-27a5-46f6-bcd2-ee20e026f5dd}</Project>
       <Name>DigitalRune.CommandLine</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation%28PCL%29.csproj">
-      <Project>{4a84fcaf-bdd3-403e-a409-346d8b36564b}</Project>
-      <Name>DigitalRune.ServiceLocation%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj">
+      <Project>{0f5efc04-c685-420e-a92e-741ac517db00}</Project>
+      <Name>DigitalRune.ServiceLocation</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Windows.Controls\DigitalRune.Windows.Controls.csproj">
       <Project>{6c1a27b5-4e09-4b52-ac71-9489ec0353e8}</Project>

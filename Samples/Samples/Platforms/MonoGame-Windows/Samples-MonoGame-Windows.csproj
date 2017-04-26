@@ -91,9 +91,9 @@
       <Project>{82af32ed-e99e-4c61-902f-9e2d42eae0f3}</Project>
       <Name>DigitalRune.Physics%28PCL%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Source\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation%28PCL%29.csproj">
-      <Project>{4a84fcaf-bdd3-403e-a409-346d8b36564b}</Project>
-      <Name>DigitalRune.ServiceLocation%28PCL%29</Name>
+    <ProjectReference Include="..\..\..\..\Source\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj">
+      <Project>{0f5efc04-c685-420e-a92e-741ac517db00}</Project>
+      <Name>DigitalRune.ServiceLocation</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\Source\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>

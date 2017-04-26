@@ -140,9 +140,9 @@
       <Project>{156169b7-af63-478c-90cb-f6652b867e4f}</Project>
       <Name>DigitalRune.Particles%28PCL%29</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation%28PCL%29.csproj">
-      <Project>{4A84FCAF-BDD3-403E-A409-346D8B36564B}</Project>
-      <Name>DigitalRune.ServiceLocation%28PCL%29</Name>
+    <ProjectReference Include="..\DigitalRune.ServiceLocation\DigitalRune.ServiceLocation.csproj">
+      <Project>{0f5efc04-c685-420e-a92e-741ac517db00}</Project>
+      <Name>DigitalRune.ServiceLocation</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Windows.Controls\DigitalRune.Windows.Controls.csproj">
       <Project>{6c1a27b5-4e09-4b52-ac71-9489ec0353e8}</Project>
