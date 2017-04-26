@@ -12,7 +12,7 @@
     <AssemblyName>DigitalRune.Particles</AssemblyName>
     <TargetFrameworkVersion Condition=" '$(OS)' == 'Windows_NT' ">v4.0</TargetFrameworkVersion>
     <TargetFrameworkVersion Condition=" '$(OS)' == 'Unix' ">v4.5</TargetFrameworkVersion>
-    <TargetFrameworkProfile Condition=" '$(OS)' == 'Windows_NT' ">Profile328</TargetFrameworkProfile>
+    <TargetFrameworkProfile Condition=" '$(OS)' == 'Windows_NT' ">Profile344</TargetFrameworkProfile>
     <TargetFrameworkProfile Condition=" '$(OS)' == 'Unix' ">Profile78</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,7 +55,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="8c362669-6670-42d7-b22c-e0930b3242e3" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="8c362669-6670-42d7-b22c-e0930b3242e3" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
