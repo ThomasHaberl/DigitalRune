@@ -56,7 +56,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="8adf4a57-4257-47b7-a2c3-3ba700613db0" />
+      <UserProperties ProjectLinkReference="8adf4a57-4257-47b7-a2c3-3ba700613db0" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
@@ -67,6 +67,10 @@
     <ProjectReference Include="..\DigitalRune.Game\DigitalRune.Game%28PCL%29.csproj">
       <Project>{8D76487A-0B6F-4517-85B0-2762AE1B4E1A}</Project>
       <Name>DigitalRune.Game(PCL)</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DigitalRune.Mathematics\DigitalRune.Mathematics%28PCL%29.csproj">
+      <Project>{a5833de3-70a9-4258-966f-77456d6c7900}</Project>
+      <Name>DigitalRune.Mathematics%28PCL%29</Name>
     </ProjectReference>
     <ProjectReference Include="..\DigitalRune\DigitalRune%28PCL%29.csproj">
       <Project>{05D82E85-901A-42CE-8D0A-DAF8B7F0168B}</Project>
