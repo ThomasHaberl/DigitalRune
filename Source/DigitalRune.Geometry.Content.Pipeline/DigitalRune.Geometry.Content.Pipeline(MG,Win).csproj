@@ -48,7 +48,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="3ebc3967-7562-463e-a636-78c5edb94c06" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="3ebc3967-7562-463e-a636-78c5edb94c06" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
@@ -57,6 +57,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework.Content.Pipeline\MonoGame.Framework.Content.Pipeline.Windows.csproj">
+      <Project>{da1b3f83-120a-49bb-b5ac-ece3184245ad}</Project>
+      <Name>MonoGame.Framework.Content.Pipeline.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Geometry\DigitalRune.Geometry%28PCL%29.csproj">
       <Project>{8a8fe6d4-0906-4fc3-847c-31387dfdcb2c}</Project>
       <Name>DigitalRune.Geometry%28PCL%29</Name>
@@ -72,14 +80,6 @@
     <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>
       <Name>DigitalRune</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework.Content.Pipeline\MonoGame.Framework.Content.Pipeline.Windows.csproj">
-      <Project>{b950de10-ac5d-4bd9-b817-51247c4a732d}</Project>
-      <Name>MonoGame.Framework.Content.Pipeline.Windows</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
-      <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
-      <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

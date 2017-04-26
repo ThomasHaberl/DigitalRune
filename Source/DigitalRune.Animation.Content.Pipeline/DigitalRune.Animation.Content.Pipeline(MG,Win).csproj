@@ -41,7 +41,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="5a02e74e-ef4a-405a-89f2-77a76e9767dd" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="5a02e74e-ef4a-405a-89f2-77a76e9767dd" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -57,6 +57,14 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework.Content.Pipeline\MonoGame.Framework.Content.Pipeline.Windows.csproj">
+      <Project>{da1b3f83-120a-49bb-b5ac-ece3184245ad}</Project>
+      <Name>MonoGame.Framework.Content.Pipeline.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Animation\DigitalRune.Animation%28PCL%29.csproj">
       <Project>{fca3d67b-a19a-4398-a126-171e5e1217f1}</Project>
       <Name>DigitalRune.Animation%28PCL%29</Name>
@@ -80,14 +88,6 @@
     <ProjectReference Include="..\DigitalRune\DigitalRune.csproj">
       <Project>{5a0e3c60-1ca9-49d5-84ca-308cb8e3a3b4}</Project>
       <Name>DigitalRune</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework.Content.Pipeline\MonoGame.Framework.Content.Pipeline.Windows.csproj">
-      <Project>{b950de10-ac5d-4bd9-b817-51247c4a732d}</Project>
-      <Name>MonoGame.Framework.Content.Pipeline.Windows</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
-      <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
-      <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
