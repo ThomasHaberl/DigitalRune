@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{2A345759-AE8F-463A-BDFD-618125C58794}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,7 +9,7 @@
     <RootNamespace>Samples</RootNamespace>
     <AssemblyName>Samples</AssemblyName>
     <ApplicationIcon>Game.ico</ApplicationIcon>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -169,6 +169,7 @@
     <Compile Include="..\..\Shared GameObjects\SandboxObject.cs">
       <Link>Shared GameObjects\SandboxObject.cs</Link>
     </Compile>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
 </Project>

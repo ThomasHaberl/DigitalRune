@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ICSharpCode.AvalonEdit</RootNamespace>
     <AssemblyName>ICSharpCode.AvalonEdit</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>
@@ -21,7 +21,8 @@
     <RunCodeAnalysis>False</RunCodeAnalysis>
     <CodeAnalysisRules>-Microsoft.Design#CA1020;-Microsoft.Design#CA1033;-Microsoft.Performance#CA1805;-Microsoft.Performance#CA1810</CodeAnalysisRules>
     <NoWarn>1607</NoWarn>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <RegisterForComInterop>False</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <BaseAddress>4194304</BaseAddress>
@@ -191,14 +192,17 @@
     <Compile Include="Document\UndoOperationGroup.cs">
       <DependentUpon>UndoStack.cs</DependentUpon>
     </Compile>
-    <Compile Include="Document\UndoStack.cs"></Compile>
+    <Compile Include="Document\UndoStack.cs">
+    </Compile>
     <Compile Include="Document\WeakLineTracker.cs">
       <DependentUpon>ILineTracker.cs</DependentUpon>
     </Compile>
     <Compile Include="Editing\AbstractMargin.cs" />
     <Compile Include="Editing\Caret.cs" />
-    <Compile Include="Editing\CaretLayer.cs"></Compile>
-    <Compile Include="Editing\CaretNavigationCommandHandler.cs"></Compile>
+    <Compile Include="Editing\CaretLayer.cs">
+    </Compile>
+    <Compile Include="Editing\CaretNavigationCommandHandler.cs">
+    </Compile>
     <Compile Include="Editing\CaretWeakEventHandler.cs" />
     <Compile Include="Editing\DottedLineMargin.cs" />
     <Compile Include="Editing\DragDropException.cs" />
@@ -262,7 +266,8 @@
     <Compile Include="Highlighting\HtmlRichTextWriter.cs" />
     <Compile Include="Highlighting\IHighlighter.cs" />
     <Compile Include="Highlighting\IHighlightingDefinition.cs" />
-    <Compile Include="Highlighting\IHighlightingDefinitionReferenceResolver.cs"></Compile>
+    <Compile Include="Highlighting\IHighlightingDefinitionReferenceResolver.cs">
+    </Compile>
     <EmbeddedResource Include="Highlighting\Resources\ASPX.xshd" />
     <EmbeddedResource Include="Highlighting\Resources\Boo.xshd" />
     <EmbeddedResource Include="Highlighting\Resources\CPP-Mode.xshd" />
@@ -417,7 +422,8 @@
     <Compile Include="TextEditor.cs" />
     <Page Include="TextEditor.xaml" />
     <Compile Include="TextEditorAutomationPeer.cs" />
-    <Compile Include="TextEditorComponent.cs"></Compile>
+    <Compile Include="TextEditorComponent.cs">
+    </Compile>
     <Compile Include="TextEditorOptions.cs" />
     <Compile Include="TextEditorWeakEventManager.cs">
       <DependentUpon>TextEditor.cs</DependentUpon>
