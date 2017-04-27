@@ -54,11 +54,17 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="SharpDX">
-      <HintPath>..\MonoGame\ThirdParty\Dependencies\SharpDX\Windows\SharpDX.dll</HintPath>
+    <Reference Include="SharpDX, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharpDX\Bin\Desktop\SharpDX.dll</HintPath>
     </Reference>
-    <Reference Include="SharpDX.Direct2D1">
-      <HintPath>..\MonoGame\ThirdParty\Dependencies\SharpDX\Windows\SharpDX.Direct2D1.dll</HintPath>
+    <Reference Include="SharpDX.Direct2D1, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharpDX\Bin\Desktop\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharpDX\Bin\Desktop\SharpDX.DXGI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -92,6 +98,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework.Content.Pipeline\MonoGame.Framework.Content.Pipeline.Windows.csproj">
+      <Project>{da1b3f83-120a-49bb-b5ac-ece3184245ad}</Project>
+      <Name>MonoGame.Framework.Content.Pipeline.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{e68ca64e-f01d-4cde-be48-77d72abdcf76}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DigitalRune.Animation.Content.Pipeline\DigitalRune.Animation.Content.Pipeline%28MG,Win%29.csproj">
       <Project>{461af538-60c1-4bdc-a1b8-60c2750e5bc3}</Project>
       <Name>DigitalRune.Animation.Content.Pipeline%28MG,Win%29</Name>
@@ -167,14 +181,6 @@
     <ProjectReference Include="..\ICSharpCode.AvalonEdit\ICSharpCode.AvalonEdit.csproj">
       <Project>{6c55b776-26d4-4db3-a6ab-87e783b2f3d1}</Project>
       <Name>ICSharpCode.AvalonEdit</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework.Content.Pipeline\MonoGame.Framework.Content.Pipeline.Windows.csproj">
-      <Project>{B950DE10-AC5D-4BD9-B817-51247C4A732D}</Project>
-      <Name>MonoGame.Framework.Content.Pipeline.Windows</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MonoGame\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
-      <Project>{7de47032-a904-4c29-bd22-2d235e8d91ba}</Project>
-      <Name>MonoGame.Framework.Windows</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

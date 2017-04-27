@@ -597,7 +597,7 @@ namespace DigitalRune.Graphics.Content
               throw new NotSupportedException("Format conversion is not supported.");
 
             converter.Initialize(source, targetGuid, GetWicDither(flags), null, 0, BitmapPaletteType.Custom);
-            frame.WriteSource(converter, new Rectangle(0, 0, image.Width, image.Height));
+            frame.WriteSource(converter, new SharpDX.Mathematics.Interop.RawBox(0, 0, image.Width, image.Height));
           }
         }
 
