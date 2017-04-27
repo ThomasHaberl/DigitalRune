@@ -1265,12 +1265,8 @@ namespace DigitalRune.Graphics.Rendering
 
       _effect.CurrentTechnique = _techniqueQuery;
       _techniqueQuery.Passes[0].Apply();
-
-#if MONOGAME
-      var primitiveType = PrimitiveType.PointList;
-#else
+            
       var primitiveType = PrimitiveType.LineStrip;
-#endif
 
       graphicsDevice.DrawUserPrimitives(primitiveType, _queryData, 0, actualNumberOfNodes);
 
