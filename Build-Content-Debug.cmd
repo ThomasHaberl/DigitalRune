@@ -7,7 +7,7 @@ ECHO ----- Building DigitalRune.Graphics.Content...
 cd Source\DigitalRune.Graphics.Content
 
 :: Build content with MonoGame Content Builder tool.
-..\MonoGame\Tools\MGCB\bin\Windows\AnyCPU\Debug\MGCB.exe /@:DigitalRune.Graphics(DEBUG).mgcb || GOTO error
+..\..\..\MonoGame\Tools\MGCB\bin\Windows\AnyCPU\Debug\MGCB.exe /@:DigitalRune.Graphics(DEBUG).mgcb || GOTO error
 
 :: ZIP content.
 ..\..\Tools\Pack\bin\x64\Debug\Pack.exe --output bin\DigitalRune.zip --recursive --directory bin\Windows *.* || GOTO error
@@ -21,7 +21,7 @@ ECHO ----- Building DigitalRune.Editor.Game.Content...
 cd Source\DigitalRune.Editor.Game.Content
 
 :: Build content with MonoGame Content Builder tool.
-..\MonoGame\Tools\MGCB\bin\Windows\AnyCPU\Debug\MGCB.exe /@:DigitalRune.Editor.Game-Debug.mgcb || GOTO error
+..\..\..\MonoGame\Tools\MGCB\bin\Windows\AnyCPU\Debug\MGCB.exe /@:DigitalRune.Editor.Game-Debug.mgcb || GOTO error
 
 :: ZIP content.
 ..\..\Tools\Pack\bin\x64\Debug\Pack.exe --output bin\DigitalRune.Editor.Game.zip --recursive --directory bin *.* || GOTO error
