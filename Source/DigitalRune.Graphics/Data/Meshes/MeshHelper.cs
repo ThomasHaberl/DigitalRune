@@ -398,10 +398,6 @@ namespace DigitalRune.Graphics
     {
       switch (primitiveType)
       {
-#if MONOGAME
-        case PrimitiveType.PointList:
-          return primitiveCount;
-#endif
         case PrimitiveType.LineList:
           return primitiveCount * 2;
         case PrimitiveType.LineStrip:

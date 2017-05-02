@@ -100,6 +100,7 @@ namespace Samples
         PreferredBackBufferWidth = 1280,
         PreferredBackBufferHeight = 720,
 #endif
+        GraphicsProfile = GraphicsProfile.HiDef,
         PreferredDepthStencilFormat = DepthFormat.Depth24Stencil8,
         PreferMultiSampling = false,
         SynchronizeWithVerticalRetrace = true,
