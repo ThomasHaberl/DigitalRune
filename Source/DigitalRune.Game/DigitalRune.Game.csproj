@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\.NETFramework\Release\DigitalRune.Game.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
@@ -84,6 +90,9 @@
     <Compile Include="Timing\Timers\VariableStepTimer.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Class Diagrams\Game %28GameObjects%29.cd" />
     <None Include="Class Diagrams\Game.States.cd" />
     <None Include="Class Diagrams\Game.Timing.cd" />

@@ -65,5 +65,3 @@ using System.Windows.Markup;
 [assembly: XmlnsPrefix("http://schemas.digitalrune.com/editor", "editor")]
 [assembly: XmlnsDefinition("http://schemas.digitalrune.com/editor", "DigitalRune.Editor")]
 [assembly: NeutralResourcesLanguage("en")]
-
-//[assembly: InternalsVisibleTo("DigitalRune.Tests,           PublicKey=0024000004800000940000000602000000240000525341310004000001000100615fc42c6443b01aa1cb1c87b1c452c35ed3019ab1cf15cb424d94cb427548c527ad08e079d71067f52795343aec489eeb4c2fd3b1b02aab848f4ef9501c99434943fb95156218061968f143245f8a7263551acca6ea9dde29065bb6528871cabf90e354d6d75dc52214b72cfb7afec5be2e320faf50278d1f23b953eebb9695")]

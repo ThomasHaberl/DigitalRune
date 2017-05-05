@@ -34,6 +34,12 @@
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>bin\.NETFramework\Release\DigitalRune.Animation.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
@@ -191,6 +197,9 @@
     <Compile Include="Transitions\SnapshotAndReplaceAllTransition.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Class Diagrams\Animation.cd" />
     <None Include="Class Diagrams\Animation.Character.cd" />
     <None Include="Class Diagrams\Animation.Character_Avatars.cd" />

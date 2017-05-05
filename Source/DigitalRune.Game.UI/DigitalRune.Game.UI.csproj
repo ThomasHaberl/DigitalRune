@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\.NETFramework\Release\DigitalRune.Game.UI.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
@@ -122,6 +128,9 @@
     <Compile Include="VerticalAlignment.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Class Diagrams\Game.UI.cd" />
     <None Include="Class Diagrams\Game.UI.Consoles.cd" />
     <None Include="Class Diagrams\Game.UI.Controls.cd" />

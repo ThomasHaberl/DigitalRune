@@ -32,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\.NETFramework\Release\DigitalRune.Physics.Specialized.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
   </ItemGroup>
@@ -53,6 +59,9 @@
     <Compile Include="Vehicles\Wheel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Class Diagrams\Physics.Specialized_CharacterControllers.cd" />
     <None Include="Class Diagrams\Physics.Specialized_Ragdolls.cd" />
     <None Include="Class Diagrams\Physics.Specialized_Vehicles.cd" />

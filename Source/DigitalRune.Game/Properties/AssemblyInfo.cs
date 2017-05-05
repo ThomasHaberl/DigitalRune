@@ -49,5 +49,5 @@ using System.Runtime.InteropServices;
 
 // Make internals visible to the unit test project.
 #if !XBOX && !WINDOWS_PHONE
-[assembly: InternalsVisibleTo("DigitalRune.Game.Tests")]
+[assembly: InternalsVisibleTo("DigitalRune.Game.Tests,PublicKey=002400000480000094000000060200000024000052534131000400000100010071ebe9d74d347649f6004634291017c1f804788931790d576daa52787fbd89cdb23d73f020c12bae70c9761b1eeacf48d742b96277585a69484ad148c77a5ce95fe1bd00d6032daf1178debda2ddf8c5acf44fd11df0151bd5051907062a2eff39f7421e0d9afdc90f97f1d87f4ac67df092e41472d1cdcba7d32afd06ff97af")]
 #endif

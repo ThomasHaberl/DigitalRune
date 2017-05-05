@@ -40,10 +40,16 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="b8e4b812-a541-416e-8f77-e78cf059cdd3" />
+      <UserProperties ProjectLinkReference="b8e4b812-a541-416e-8f77-e78cf059cdd3" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -104,6 +110,9 @@
     <Compile Include="Animations\AnimationMerger.cs" />
     <Compile Include="Animations\AnimationSplitDefinition.cs" />
     <Compile Include="Animations\AnimationSplitter.cs" />
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Class Diagrams\Graphics.Content.Pipeline.cd" />
     <None Include="Class Diagrams\Graphics.Content.Pipeline_Animations.cd" />
     <None Include="Class Diagrams\Graphics.Content.Pipeline_Effects.cd" />

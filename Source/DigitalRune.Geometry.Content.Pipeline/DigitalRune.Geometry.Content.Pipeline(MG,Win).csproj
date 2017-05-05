@@ -38,6 +38,12 @@
     <DocumentationFile>bin\MonoGame\Windows\Release\DigitalRune.Geometry.Content.Pipeline.xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
@@ -48,7 +54,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="3ebc3967-7562-463e-a636-78c5edb94c06" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="3ebc3967-7562-463e-a636-78c5edb94c06" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
@@ -97,6 +103,9 @@
     <Compile Include="PoseDWriter.cs" />
     <Compile Include="PoseWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Properties\AssemblyInfo.template" />
     <Compile Include="Shapes\AabbWriter.cs" />
     <Compile Include="Shapes\BoxShapeWriter.cs" />

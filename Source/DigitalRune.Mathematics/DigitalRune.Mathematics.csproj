@@ -35,6 +35,12 @@
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>bin\.NETFramework\Release\DigitalRune.Mathematics.xml</DocumentationFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Runtime.Serialization" />
@@ -210,6 +216,9 @@
     <Compile Include="Statistics\UniformDistributionF.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Class Diagrams\Mathematics.Algebra.Design.cd" />
     <None Include="Class Diagrams\Mathematics.Algebra_LinearSystems.cd" />
     <None Include="Class Diagrams\Mathematics.Algebra_Matrices.cd" />

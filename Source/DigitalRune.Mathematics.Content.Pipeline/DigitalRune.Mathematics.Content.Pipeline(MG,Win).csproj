@@ -38,6 +38,12 @@
     <DocumentationFile>bin\MonoGame\Windows\Release\DigitalRune.Mathematics.Content.Pipeline.xml</DocumentationFile>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.
@@ -48,7 +54,7 @@
   -->
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="5289a325-e339-4e11-84bf-321ada51e1df" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="5289a325-e339-4e11-84bf-321ada51e1df" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
@@ -91,6 +97,9 @@
     <Compile Include="PathKey2FWriter.cs" />
     <Compile Include="PathKey3FWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="Properties\AssemblyInfo.template" />
     <Compile Include="QuaternionDWriter.cs" />
     <Compile Include="QuaternionFWriter.cs" />

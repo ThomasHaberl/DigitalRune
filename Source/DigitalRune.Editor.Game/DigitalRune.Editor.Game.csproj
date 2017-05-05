@@ -38,6 +38,12 @@
     <RunCodeAnalysis>false</RunCodeAnalysis>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\..\DigitalRune.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Reference Include="AssimpNet, Version=3.3.1.0, Culture=neutral, PublicKeyToken=0d51b391f59f42a6, processorArchitecture=MSIL" />
@@ -343,6 +349,9 @@
     <Compile Include="Textures\TextureDocumentViewModel.cs" />
     <Compile Include="Textures\TexturesExtension.cs" />
     <Compile Include="Textures\TexturePresentationTarget.cs" />
+    <None Include="..\..\DigitalRune.snk">
+      <Link>DigitalRune.snk</Link>
+    </None>
     <None Include="app.config" />
     <None Include="Class Diagrams\Editor.Models.cd" />
     <None Include="Class Diagrams\Editor.Shader.cd" />
