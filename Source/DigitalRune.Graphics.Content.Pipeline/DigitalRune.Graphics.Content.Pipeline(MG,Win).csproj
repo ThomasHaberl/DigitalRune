@@ -49,7 +49,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties ProjectLinkReference="b8e4b812-a541-416e-8f77-e78cf059cdd3" ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" />
+      <UserProperties ProjectLinkerExcludeFilter="\\?desktop(\\.*)?$;\\?silverlight(\\.*)?$;\.desktop;\.silverlight;\.xaml;^service references(\\.*)?$;\.clientconfig;^web references(\\.*)?$" ProjectLinkReference="b8e4b812-a541-416e-8f77-e78cf059cdd3" />
     </VisualStudio>
   </ProjectExtensions>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -61,7 +61,7 @@
   -->
   <ItemGroup>
     <Reference Include="PVRTexLibNET">
-      <HintPath>..\MonoGame\ThirdParty\Dependencies\PVRTexLibNET\PVRTexLibNET.dll</HintPath>
+      <HintPath>..\..\..\MonoGame\ThirdParty\PVRTexLibNET\PVRTexLibNET.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

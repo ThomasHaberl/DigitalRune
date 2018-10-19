@@ -46,7 +46,9 @@
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Reference Include="AssimpNet, Version=3.3.1.0, Culture=neutral, PublicKeyToken=0d51b391f59f42a6, processorArchitecture=MSIL" />
+    <Reference Include="AssimpNet">
+      <HintPath>..\..\..\MonoGame\ThirdParty\assimp\AssimpNet.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Build" />
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,15 +64,19 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="SharpDX, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\SharpDX\Bin\Desktop\SharpDX.dll</HintPath>
+      <HintPath>..\..\..\SharpDX\Source\SharpDX\bin\Release\net45\SharpDX.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.Direct2D1, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\SharpDX\Bin\Desktop\SharpDX.Direct2D1.dll</HintPath>
+      <HintPath>..\..\..\SharpDX\Source\SharpDX.Direct2D1\bin\Release\net45\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\SharpDX\Source\SharpDX.Direct3D11\bin\Release\net45\SharpDX.Direct3D11.dll</HintPath>
     </Reference>
     <Reference Include="SharpDX.DXGI, Version=2.6.3.0, Culture=neutral, PublicKeyToken=b4dcf0f35e5521f1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\SharpDX\Bin\Desktop\SharpDX.DXGI.dll</HintPath>
+      <HintPath>..\..\..\SharpDX\Source\SharpDX.DXGI\bin\Release\net45\SharpDX.DXGI.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -437,37 +443,37 @@
     </CodeAnalysisDictionary>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\assimp\Assimp64.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\assimp\Assimp64.dll">
       <Link>Assimp64.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\assimp\AssimpNet.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\assimp\AssimpNet.dll">
       <Link>AssimpNet.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\MojoShader\Windows\libmojoshader_64.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\Dependencies\MojoShader\Windows\libmojoshader_64.dll">
       <Link>libmojoshader_64.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\NVTT\Windows\x64\nvtt.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\NVTT\Windows\nvtt.dll">
       <Link>nvtt.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\FreeImage.NET\Windows\FreeImage.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\FreeImage.NET\Windows\FreeImage.dll">
       <Link>FreeImage.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\PVRTexLibNET\PVRTexLibNET.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\PVRTexLibNET\PVRTexLibNET.dll">
       <Link>PVRTexLibNET.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\MonoGame\ThirdParty\Dependencies\PVRTexLibNET\Windows\x64\PVRTexLibWrapper.dll">
+    <None Include="..\..\..\MonoGame\ThirdParty\PVRTexLibNET\Windows\x64\PVRTexLibWrapper.dll">
       <Link>PVRTexLibWrapper.dll</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
